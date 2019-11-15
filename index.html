@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucas' CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<style>
+    .hero-body.is-primary {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    .hero-body .container {
+        display: flex;
+        vertical-align: middle;
+        align-items:center;
+        object-fit: cover
+    }
+    .hero-body .portrait {
+        width: 300px;
+        border-radius: 150px;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+        float: left;
+    }
+    .hero-body .name {
+        padding-left: 2rem;
+    }
+    .hero-body .name .title {
+        color: #fff;
+        font-size: 64px;
+    }
+    .hero-body .name .subtitle {
+        color: #fff;
+        font-size: 32px
+    }
+
+    @media only screen and (max-width: 600px)
+    {
+        .hero-body.is-primary {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .hero-body .portrait {
+            width: 100px;
+        }
+
+        .hero-body .name .title {
+            font-size: 24px;
+        }
+        .hero-body .name .subtitle {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 768px)
+    {
+        .hero-body.is-primary {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .hero-body .portrait {
+            width: 150px;
+        }
+
+        .hero-body .name .title {
+            font-size: 36px;
+        }
+        .hero-body .name .subtitle {
+            font-size: 24px;
+        }
+    }
+</style>
+<body>
+
+<section class="hero is-primary">
+    <div class="hero-head">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+
+                </div>
+                <div class="navbar-menu is-active">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="#skills">
+                            <span>Skills</span>
+                        </a>
+                        <a class="navbar-item" href="#projects">
+                            <span>Projects</span>
+                        </a>
+                        <a class="navbar-item" href="#experience">
+                            <span>Experience</span>
+                        </a>
+                        <a class="navbar-item" href="#education">
+                            <span>Education</span>
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="https://github.com/lucas3359">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Github</span>
+                        </a>
+                        <a class="navbar-item" href="https://www.linkedin.com/in/lucas-huang-19940404/">
+                            <span class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body is-primary">
+        <div class="container">
+            <img class="portrait" src="images/lucas.jpeg" width="300px" alt="Lucas Huang"/>
+            <div class="name">
+                <h1 class="title">
+                    Lucas Huang
+                </h1>
+                <h2 class="subtitle">
+                    Data Scientist
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="skills">
+    <div class="container">
+        <h1 class="title">Skills</h1>
+
+        <div class="columns">
+            <div class="column">
+                <h2 class="subtitle has-text-weight-bold">Analytics</h2>
+                <span>R(RStudio)</span><br />
+                <span>Python</span><br />
+                <span>Weka</span><br />
+                <span>SPSS Modeller</span><br />
+                <span>Azure ML Studio</span><br />
+            </div>
+
+            <div class="column">
+                <h2 class="subtitle has-text-weight-bold">Visualisation</h2>
+                <span>MicroStrategy</span><br />
+                <span>R-Shiny</span><br />
+                <span>ggplot2</span><br />
+                <span>D3</span><br />
+                <span>Power BI</span><br />
+                <span>Tableau</span><br />
+            </div>
+
+            <div class="column">
+                <h2 class="subtitle has-text-weight-bold">Database</h2>
+                <span>Oracle SQL Developer</span><br />
+                <span>MySQL</span><br />
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-one-third">
+                <h2 class="subtitle has-text-weight-bold">Statistical Analysis</h2>
+                <span>ANOVA / MANOVA</span><br />
+                <span>Linear Regression</span><br />
+                <span>Longitudinal Analysis</span><br />
+            </div>
+
+            <div class="column is-one-third">
+                <h2 class="subtitle has-text-weight-bold">Machine Learning</h2>
+                <span>Random Forest</span><br />
+                <span>Text Mining</span><br />
+                <span>K-Means Clustering</span><br />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="container">
+        <h1 class="title">Projects</h1>
+        <div class="tile is-ancestor">
+            <div class="tile">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="images/MSTR1.png" alt="Microstrategy Dashboard" />
+                        </figure>
+                    </div>
+                    <div class="card-header">
+                        <div class="card-header-title">
+                            <h3>Microstrategy Dashboard</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="images/map.PNG" alt="Microstrategy GIS Visualisation" />
+                        </figure>
+                    </div>
+                    <div class="card-header">
+                        <div class="card-header-title">
+                            <h3>Microstrategy GIS Visualisation</h3>
+                        </div>
+                    </div>
+    <!--                <div class="card-content">
+
+                    </div>-->
+                </div>
+            </div>
+            <div class="tile">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="experience">
+    <div class="container">
+        <h1 class="title">Experience</h1>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="images/uoa.png" alt="The University of Auckland">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Associate Data Scientist</p>
+                        <p class="subtitle is-5">The University of Auckland</p>
+                    </div>
+                </div>
+                <p>July 2018 - Present</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="images/massey.png" alt="Massey University">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Data Analyst</p>
+                        <p class="subtitle is-5">Massey University</p>
+                    </div>
+                </div>
+                <p>November 2017 - February 2018</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="education">
+    <div class="container">
+        <h1 class="title">Education</h1>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="images/uoa.png" alt="The University of Auckland">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Masters in Information Technology</p>
+                        <p class="subtitle is-5">The University of Auckland</p>
+                    </div>
+                </div>
+                <p>Auckland, New Zealand</p>
+                <p>2017 - 2019</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="images/beihang.png" alt="Beihang University">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Bachelor of Engineering - Software Engineering</p>
+                        <p class="subtitle is-5">Beihang University</p>
+                    </div>
+                </div>
+                <p>Beijing, China</p>
+                <p>2012 - 2016</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
